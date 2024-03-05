@@ -1,0 +1,234 @@
+*{
+    margin:0px;
+    font-size: 20px;
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    outline: none;/*outline is a line that is drawn around elements*/
+    scroll-behavior: smooth;
+}
+body{
+    color: black !important;
+    font-family: 'Raleway', sans-serif;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height:100px;
+    background-color: antiquewhite;
+    position: sticky;
+    top:0;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin:0 23px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+    
+nav ul li :hover{
+   color: red;
+   font-size: 1.01rem;
+}
+
+
+
+
+.firstsection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.firstsection >  div{
+    width:30%;
+}
+.leftsection{
+    width:50px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.button{
+    padding:50px 0;
+}
+.leftsection .btn{
+    background-color:pink;
+    color: black;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px 10px;
+}
+.leftsection .btn a{
+    text-decoration: none;
+    color: black;
+}
+.rightsection img{
+    width:80% ;
+    margin:30px 0;
+}
+.red{
+    color: red;
+}
+.text{
+    color: red;
+    font-weight: bold;
+    font-size: 25px;
+}
+#element{
+    color:red;
+    font-size: 25px;
+}
+.secondsection{
+    max-width:80vw ;
+    margin: auto;
+    height: 80vh;
+}
+.secondsection{
+    font-size: 1.9rem;
+}
+.secondsection .box{
+    background: black;
+    width:77vw;
+    height:2px ;
+    margin:56px 0;
+    display: flex;
+  
+
+}
+.secondsection .vertical{
+    height: 93px;
+    width: 1px;
+    background-color: black;
+    margin:0 120px;
+}
+.image-top{
+    width:23px;
+    position: relative;
+    top:-32px;
+    left:-9px;
+}
+.verticaltitle{
+    position: relative;
+    top:75px;
+    width: 150px;
+    font-weight: bold;
+
+}
+.verticaldesc{
+    position: relative;
+    color:red;
+    top:86px;
+    width: 150px;
+    font-size: 9px;
+
+}
+
+footer{
+    background-color:whitesmoke;
+    color: black;
+    width: 100%;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    padding: 23px 122px;
+    justify-content: space-between;
+
+}
+.footer ul{
+    list-style: none;
+}
+.footer >div{
+    width:223px;
+}
+footer .footer-rights{
+    text-align: center;
+    color: white;
+    padding: 12px 0;
+
+}
+.social-icons{
+    margin-left: 1px;
+}
+.social-icons img :hover{
+    transition: 1s;
+}
+#about{
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+.col {
+    float: left;
+    padding: 5px;
+  }
+
+
+
+@media only screen and (max-width: 740px) {
+    body {
+      min-width: fit-content;
+     
+    }
+    .box{
+        display: flex;
+        flex-direction: column;
+    }
+    .firstsection{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .secondsection .vertical{
+        height: unset;
+        margin: 0 69px;
+    }
+    .secondsection .box{
+        width:50vw;
+    }
+    .verticaltitle,.verticaldesc{
+        left:45px;
+
+    }
+    nav{
+        flex-direction: column;
+        height: 221px;
+    }
+    .leftsection{
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .rightsection{
+        width: 721px !important;
+        display: flex;
+        justify-content: center;
+    }
+    .rightsection img{
+        width: 45vw;
+        margin-bottom: 75px;
+    }
+    .secondsection{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 1009px;
+    }
+    .image-top {
+        top:133px
+    }
+    footer{
+        width:740px;
+        font-size: 20px;
+    }
+  }
